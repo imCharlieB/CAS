@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="5a362984-27e4-4174-84c3-220b587fe9e0" 
+        solutionId="5a362984-27e4-4174-84c3-220b587fe9e0" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="opportunities"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="51fc3edd-a219-4c40-9a76-fd313484af98" />
+  </features>
+</package>

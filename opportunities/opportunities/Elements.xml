@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="Fonts\selection.json" Url="Fonts/selection.json" ReplaceContent="TRUE" />
+    <File Path="Fonts\metro.woff" Url="Fonts/metro.woff" ReplaceContent="TRUE" />
+    <File Path="Fonts\metro.ttf" Url="Fonts/metro.ttf" ReplaceContent="TRUE" />
+    <File Path="Fonts\metro.svg" Url="Fonts/metro.svg" ReplaceContent="TRUE" />
+    <File Path="Fonts\metro.eot" Url="Fonts/metro.eot" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

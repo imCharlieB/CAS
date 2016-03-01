@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro.min.css" Url="Content/metro.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro.css" Url="Content/metro.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-schemes.min.css" Url="Content/metro-schemes.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-schemes.css" Url="Content/metro-schemes.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-rtl.min.css" Url="Content/metro-rtl.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-rtl.css" Url="Content/metro-rtl.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-responsive.min.css" Url="Content/metro-responsive.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-responsive.css" Url="Content/metro-responsive.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-icons.min.css" Url="Content/metro-icons.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\metro-icons.css" Url="Content/metro-icons.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
