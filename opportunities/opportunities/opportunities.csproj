@@ -92,6 +92,7 @@
     <Content Include="Scripts\knockout-3.4.0.js" />
     <Content Include="Scripts\metro.js" />
     <Content Include="Scripts\metro.min.js" />
+    <Content Include="Scripts\oppgrptotal.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>

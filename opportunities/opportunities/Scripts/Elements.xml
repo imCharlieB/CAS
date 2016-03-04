@@ -11,5 +11,6 @@
     <File Path="Scripts\jquery-2.2.1.min.map" Url="Scripts/jquery-2.2.1.min.map" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-2.2.1.min.js" Url="Scripts/jquery-2.2.1.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-2.2.1.js" Url="Scripts/jquery-2.2.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\oppgrptotal.js" Url="Scripts/oppgrptotal.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
