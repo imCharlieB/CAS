@@ -4,5 +4,7 @@
     <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
     <ProjectItemFile Source="Default.aspx" Target="Pages\" Type="ElementFile" />
     <ProjectItemFile Source="opportunity_totals.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="sample.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CASOPPS.aspx" Target="Pages\" Type="ElementFile" />
   </Files>
 </ProjectItem>

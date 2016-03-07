@@ -3,5 +3,7 @@
   <Module Name="Pages">
     <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
     <File Path="Pages\opportunity_totals.aspx" Url="Pages/opportunity_totals.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\sample.html" Url="Pages/sample.html" ReplaceContent="TRUE" />
+    <File Path="Pages\CASOPPS.aspx" Url="Pages/CASOPPS.aspx" ReplaceContent="TRUE" />
   </Module>
 </Elements>

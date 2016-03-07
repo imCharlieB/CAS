@@ -6,5 +6,6 @@
     <File Path="Fonts\metro.ttf" Url="Fonts/metro.ttf" ReplaceContent="TRUE" />
     <File Path="Fonts\metro.svg" Url="Fonts/metro.svg" ReplaceContent="TRUE" />
     <File Path="Fonts\metro.eot" Url="Fonts/metro.eot" ReplaceContent="TRUE" />
+    <File Path="App\Webparts\Qtotal.js" Url="App/Webparts/Qtotal.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

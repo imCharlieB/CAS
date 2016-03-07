@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<%@ Page language="C#" %>
+<%@ Register Tagprefix="SharePoint"
+     Namespace="Microsoft.SharePoint.WebControls"
+     Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<html>
+<head>
+    <meta name="WebPartPageExpansion" content="full" />
+    <script type="text/javascript" src="/_layouts/1033/init.js"></script>
+    <script type="text/javascript" src="/_layouts/MicrosoftAjax.js"></script>
+    <script  type="text/javascript" src="/_layouts/sp.core.js"></script>
+    <script type="text/javascript" src="/_layouts/sp.runtime.js"></script>
+    <script type="text/javascript" src="/_layouts/sp.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../Sc/jquery.SPServices-2013.01.min.js"></script>
+    <script type="text/javascript" src="../Scripts/datajs-1.1.3.min.js"></script>
+    <script type="text/javascript" src="../Scripts/knockout-3.4.0.js"></script>
+    <script type="text/javascript" src="../Scripts/knockout.wrap.js"></script>
+</head>
+<body>
+    <form runat="server">
+        <SharePoint:FormDigest ID="FormDigest1" runat="server"></SharePoint:FormDigest>
+    </form>
+    <h3>All Employees - Knockout Js  and jQuery ( JSON Request )</h3>
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Quarter</th>
+
+            </tr>
+        </thead>
+        <tbody data-bind="foreach:Opps">
+            <tr>
+                <td data-bind="text:OpportunityTotal"></td>
+                <td data-bind="text:Quarter_x0020_Forecasted"></td>
+
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+     function OppModal() {
+         var self = this;
+         self.Opps = ko.observableArray([]);
+         $.getJSON(_spPageContextInfo.webAbsoluteUrl + "/_vti_bin/listdata.svc/Opportunities?$top=2",
+              function (data) {
+                  if (data.d) {
+                      if (data.d.results)
+                          self.Opps(ko.wrap.toJS(data.d.results));
+                      else
+                          self.Opps(ko.wrap.toJS(data.d));
+                  }
+              }
+         );
+     }
+     ko.applyBindings(new OppModal());
+    </script>
+</body>
+</html>
+    
+

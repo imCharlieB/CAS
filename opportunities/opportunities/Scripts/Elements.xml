@@ -12,5 +12,7 @@
     <File Path="Scripts\jquery-2.2.1.min.js" Url="Scripts/jquery-2.2.1.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-2.2.1.js" Url="Scripts/jquery-2.2.1.js" ReplaceContent="TRUE" />
     <File Path="Scripts\oppgrptotal.js" Url="Scripts/oppgrptotal.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\knockout.wrap.js" Url="Scripts/knockout.wrap.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery.dataTables.min.js" Url="Scripts/jquery.dataTables.min.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

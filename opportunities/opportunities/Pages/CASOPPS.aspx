@@ -49,49 +49,48 @@
 </head>
 
      
-  
+   </head>
+
 <body>
     <div class="panel" data-role="panel">
     <div class="heading">
         <span class="title">Opportunities</span>
     </div>
-    <div class="content">     
-     Quarter: <input data-bind="value: search_Quarter, valueUpdate: 'afterkeydown'" />
-          <table class="table">
-    <thead>
+    <h2>Total Opportunities (<span data-bind="text: seats().length"></span>)</h2>
+<h4>
+Distribution by Quarter:
+    <table>
+        <thead>
+            <tr data-bind="foreach: availableMeals">
+                <th><span data-bind="text: mealName"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-bind="foreach: mealDistribution">
+                <td data-bind="text: ($data * 100).toFixed(2) + '%'"></td>
+            </tr>
+        </tbody>
+    </table>
+</h4>
+<table>
+    <thead><tr>
+        <th>Passenger name</th><th>Meal</th><th>Surcharge</th><th></th>
+    </tr></thead>
+    <tbody data-bind="foreach: seats">
         <tr>
-            <th class="sortable-column sort-asc">Quarter</th>
-            <th class="sortable-column">Total</th>
-                        </tr>
-    </thead>
-              <tbody data-bind="foreach: filteredRecords">
-           
-        <td data-bind="text: Quarter_x0020_Forecasted"></td>
-            <td data-bind="text: OpportunityTotal"></td>
-        
-    </tr>
-                         </tbody>
+            <td><input data-bind="value: name" /></td>
+            <td><select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select></td>
+            <td data-bind="text: Quarter_x0020_Forecasted"></td>
+            <td><a href="#" data-bind="click: $root.removeSeat">Remove</a></td>
+        </tr>    
+    </tbody>
 </table>
-        <div class="tile-wide bg-lighterblue" data-role="tile" data-effect="slideUpDown">
-    <div class="tile-content">
-        <div class="live-slide"><h1>Number of Opps: <div id="Opptotals"></div></h1></div>
-        <div class="live-slide"><h1> Total value: <span data-bind="text: formatCurrency(grandTotal())"></span> 
-    </div></div>
-    </div>
-</div>
-        
-        
-  <br />
-         <div class="listview small">
-     <div class="list-content" data-bind="foreach: oppqt">
-    <li data-bind="with: $root.Opps.index.Quarter_x0020_Forecasted()[$data]">
-        <h2><span data-bind="text: $parent"></span> Total Amount: <span data-bind="text: formatCurrency(total())"></span></h2>
-      
-    <hr/>
 
-</li>
-</div>
-</div>
-        </div>
+<button data-bind="click: addSeat, enable: seats().length < 7">Reserve another seat</button>
+
+<h3 data-bind="visible: totalSurcharge() > 0">
+    Total surcharge: $<span data-bind="text: totalSurcharge().toFixed(2)"></span>
+</h3>
+          
 </body>
 </html>

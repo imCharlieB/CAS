@@ -7,5 +7,6 @@
     <ProjectItemFile Source="Fonts\metro.ttf" Target="Fonts\" Type="ElementFile" />
     <ProjectItemFile Source="Fonts\metro.svg" Target="Fonts\" Type="ElementFile" />
     <ProjectItemFile Source="Fonts\metro.eot" Target="Fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="App\Webparts\Qtotal.js" Target="App\Webparts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

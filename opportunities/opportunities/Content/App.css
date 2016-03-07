@@ -1,1 +1,5 @@
 ﻿/* Place custom styles below */
+li
+{
+    list-style-type: none;
+}

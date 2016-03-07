@@ -13,5 +13,7 @@
     <ProjectItemFile Source="jquery-2.2.1.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-2.2.1.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="oppgrptotal.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="knockout.wrap.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.dataTables.min.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
